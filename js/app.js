@@ -237,29 +237,22 @@ timerContainer.innerHTML = totalSeconds + "s"; // reset innerHTMl: 0s
 
 // Modal content
 function modalBox() {
-// select modal container
-let modal = document.getElementById('myModal');
-// select <span> element
-let span = document.getElementsByClassName("close")[0];
+  // select modal container
+  let modal = document.getElementById('myModal');
+  // select <span> element
+  let span = document.getElementsByClassName("close")[0];
 
-// open the modal
-modal.style.display = "block";
+  // open the modal
+  modal.style.display = "block";
 
-// dynamically add Congrats Msg
-let congratsMsg = document.querySelector(".congrats");
-congratsMsg.innerHTML = `Congratulations! It took you ${totalSeconds} seconds to win the game in ${moves+1} moves. You earned ${starCount} star(s). To play again, click the Play triangle to the right.`;
+  // dynamically add Congrats Msg
+  let congratsMsg = document.querySelector(".congrats");
+  congratsMsg.innerHTML = `Congratulations! It took you ${totalSeconds} seconds to win the game in ${moves+1} moves. You earned ${starCount} star(s). To play again, click the Play triangle to the right.`;
 
-// When the user clicks on <span> triangle, close the modal
-span.onclick = function () {
-modal.style.display = "none"; // close modal
-newGame(); // start new game
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none"; // close modal
-    }
+  // When the user clicks on <span> triangle, close the modal
+  span.onclick = function () {
+  modal.style.display = "none"; // close modal
+  newGame(); // start new game
   }
 }
 

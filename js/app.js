@@ -252,6 +252,7 @@ congratsMsg.innerHTML = `Congratulations! It took you ${totalSeconds} seconds to
 // When the user clicks on <span> triangle, close the modal
 span.onclick = function () {
 modal.style.display = "none"; // close modal
+newGame(); // start new game
 }
 
 // When the user clicks anywhere outside of the modal, close it

@@ -129,13 +129,6 @@ function isOver() {
   // If the game is over...
   stopTimer(); // Stop our timer
   modalBox(); // Run Function: Modal Box
-  newGame(); // Run Function: new game
-
-  // TRICKY!!! -  Reset Moves
-  // adjust moves count for new game
-  // I had to set this value to -1 because it is incremented ++ to 0 when new game starts
-  moves = -1; // Arggh! Tricky.
-  movesContainer.innerHTML = moves; // reset container inner value for new game
   }
 }
 

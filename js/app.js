@@ -247,7 +247,7 @@ function modalBox() {
 
   // dynamically add Congrats Msg
   let congratsMsg = document.querySelector(".congrats");
-  congratsMsg.innerHTML = `Congratulations! It took you ${totalSeconds} seconds to win the game in ${moves+1} moves. You earned ${starCount} star(s). To play again, click the Play triangle to the right.`;
+  congratsMsg.innerHTML = `Congratulations! It took you ${totalSeconds} seconds to win the game in ${moves+1} moves. You earned ${starCount} star(s). To play again, click the restart button to the right.`;
 
   // When the user clicks on <span> triangle, close the modal
   span.onclick = function () {
